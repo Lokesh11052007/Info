@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="https://www.project.com/personal-infromation">
+  <title>Personal Information</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Personal Information</h1>
+  
+  <a href="#" onclick="toggleInfo()">Click here to show personal information</a>
+  
+  <div id="personalInfo" class="hidden">
+    <p>Name: John Doe</p>
+    <p>Email: johndoe@example.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Address: 123 Main Street, City, State</p>
+  </div>
+
+  <script>
+    function toggleInfo() {
+      var personalInfo = document.getElementById('personalInfo');
+      personalInfo.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
